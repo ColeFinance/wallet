@@ -212,7 +212,7 @@ export function BalancesNavigator (): JSX.Element {
         options={{
           headerTitle: () => (
             <HeaderTitle
-              text={translate('screens/ConvertScreen', 'Convert DFI')}
+              text={translate('screens/ConvertScreen', 'Convert COLE')}
               containerTestID={headerContainerTestId}
             />
           ),
@@ -227,7 +227,7 @@ export function BalancesNavigator (): JSX.Element {
           headerBackTitleVisible: false,
           headerTitle: () => (
             <HeaderTitle
-              text={translate('screens/ConvertConfirmScreen', 'Confirm DFI Conversion')}
+              text={translate('screens/ConvertConfirmScreen', 'Confirm COLE Conversion')}
               containerTestID={headerContainerTestId}
             />
           )

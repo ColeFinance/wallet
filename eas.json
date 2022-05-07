@@ -4,7 +4,7 @@
       "node": "16.13.2",
       "releaseChannel": "production",
       "env": {
-        "EXPO_BUNDLE_IDENTIFIER": "com.defichain.app"
+        "EXPO_BUNDLE_IDENTIFIER": "com.safahicorp.app.colemain"
       },
       "ios": {
         "image": "macos-big-sur-11.4-xcode-13.0"
@@ -22,7 +22,7 @@
     "ios_production": {
       "extends": "production",
       "env": {
-        "EXPO_BUNDLE_IDENTIFIER": "com.defichain.light.wallet"
+        "EXPO_BUNDLE_IDENTIFIER": "com.safahicorp.light.wallet"
       }
     }
   },

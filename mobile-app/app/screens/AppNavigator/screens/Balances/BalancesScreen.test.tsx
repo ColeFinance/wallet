@@ -52,14 +52,14 @@ jest.mock('@screens/AppNavigator/screens/Balances/components/Announcements', () 
 describe('balances page', () => {
   const tokens = [{
     id: '0',
-    symbol: 'DFI',
-    symbolKey: 'DFI',
-    displaySymbol: 'DFI',
+    symbol: 'COLE',
+    symbolKey: 'COLE',
+    displaySymbol: 'COLE',
     isDAT: true,
     isLPS: false,
     isLoanToken: false,
     amount: '23',
-    name: 'Defi'
+    name: 'Cole'
   }, {
     id: '1',
     symbol: 'BTC',
@@ -124,13 +124,13 @@ describe('balances page', () => {
               {
                 id: '0',
                 amount: '2.12300000',
-                symbol: 'DFI',
-                symbolKey: 'DFI',
-                name: 'Default Defi token',
-                displaySymbol: 'DFI',
+                symbol: 'COLE',
+                symbolKey: 'COLE',
+                name: 'Default Cole token',
+                displaySymbol: 'COLE',
                 activePrice: {
-                  id: 'DFI-USD-4224',
-                  key: 'DFI-USD',
+                  id: 'COLE-USD-4224',
+                  key: 'COLE-USD',
                   isLive: true,
                   block: {
                     hash: '01ff6c392764d0bba244369e3b6c096eac73bd5a5a1fc6a187ea7358baa56111',
@@ -237,13 +237,13 @@ describe('balances page', () => {
               {
                 id: '0',
                 amount: '2.12300000',
-                symbol: 'DFI',
-                symbolKey: 'DFI',
+                symbol: 'COLE',
+                symbolKey: 'COLE',
                 name: 'Default Defi token',
-                displaySymbol: 'DFI',
+                displaySymbol: 'COLE',
                 activePrice: {
-                  id: 'DFI-USD-4224',
-                  key: 'DFI-USD',
+                  id: 'COLE-USD-4224',
+                  key: 'COLE-USD',
                   isLive: true,
                   block: {
                     hash: '01ff6c392764d0bba244369e3b6c096eac73bd5a5a1fc6a187ea7358baa56111',

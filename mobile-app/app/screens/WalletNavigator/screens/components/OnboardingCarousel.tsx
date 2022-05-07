@@ -53,7 +53,7 @@ export function InitialSlide (): JSX.Element {
       />
 
       <ThemedText style={tailwind('text-2xl font-bold mt-3')}>
-        {translate('screens/OnboardingCarousel', 'DeFiChain Wallet')}
+        {translate('screens/OnboardingCarousel', 'Cole Wallet')}
       </ThemedText>
 
       <ThemedText

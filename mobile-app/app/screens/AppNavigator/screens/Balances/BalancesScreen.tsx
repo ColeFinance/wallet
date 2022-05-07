@@ -15,7 +15,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } fr
 import { batch, useDispatch, useSelector } from 'react-redux'
 import { BalanceParamList } from './BalancesNavigator'
 import { Announcements } from '@screens/AppNavigator/screens/Balances/components/Announcements'
-import { DFIBalanceCard } from '@screens/AppNavigator/screens/Balances/components/DFIBalanceCard'
+import { COLEBalanceCard } from '@screens/AppNavigator/screens/Balances/components/COLEBalanceCard'
 import { translate } from '@translations'
 import { Platform, RefreshControl, View } from 'react-native'
 import { RootState } from '@store'
@@ -136,9 +136,9 @@ export function BalancesScreen ({ navigation }: Props): JSX.Element {
         token
       ) => {
         const usdAmount = getTokenPrice(token.symbol, new BigNumber(token.amount), token.isLPS)
-        if (token.symbol === 'DFI') {
+        if (token.symbol === 'COLE') {
           return {
-            // `token.id === '0_unified'` to avoid repeated DFI price to get added in totalAvailableValue
+            // `token.id === '0_unified'` to avoid repeated COLE price to get added in totalAvailableValue
             totalAvailableValue: token.id === '0_unified'
               ? totalAvailableValue
               : totalAvailableValue.plus(usdAmount.isNaN() ? 0 : usdAmount),
@@ -167,7 +167,7 @@ export function BalancesScreen ({ navigation }: Props): JSX.Element {
     const dstTokenSymbols = dstTokens.map(token => token.displaySymbol)
     const lockedTokensArray: BalanceRowToken[] = []
     lockedTokens.forEach((_lockedBalance, displaySymbol) => {
-      if (displaySymbol === 'DFI') {
+      if (displaySymbol === 'COLE') {
         return
       }
 
@@ -207,9 +207,9 @@ export function BalancesScreen ({ navigation }: Props): JSX.Element {
       handleOnPress: () => onPortfolioButtonGroupChange(PortfolioButtonGroupTabKey.USDT)
     },
     {
-      id: PortfolioButtonGroupTabKey.DFI,
-      label: translate('screens/BalancesScreen', 'DFI'),
-      handleOnPress: () => onPortfolioButtonGroupChange(PortfolioButtonGroupTabKey.DFI)
+      id: PortfolioButtonGroupTabKey.COLE,
+      label: translate('screens/BalancesScreen', 'COLE'),
+      handleOnPress: () => onPortfolioButtonGroupChange(PortfolioButtonGroupTabKey.COLE)
     },
     {
       id: PortfolioButtonGroupTabKey.BTC,
@@ -358,7 +358,7 @@ export function BalancesScreen ({ navigation }: Props): JSX.Element {
           denominationCurrency={denominationCurrency}
         />
         <BalanceActionSection navigation={navigation} isZeroBalance={isZeroBalance} />
-        <DFIBalanceCard denominationCurrency={denominationCurrency} />
+        <COLEBalanceCard denominationCurrency={denominationCurrency} />
         {!hasFetchedToken
           ? (
             <View style={tailwind('p-4')}>

@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "DeFiChain Wallet",
-    "description": "DeFi Blockchain Light Wallet for iOS, Android & Web.",
+    "name": "Cole Wallet",
+    "description": "Cole Blockchain Light Wallet for iOS, Android & Web.",
     "slug": "wallet",
-    "owner": "defichain",
+    "owner": "walkerr",
     "version": "0.0.0",
     "orientation": "portrait",
     "icon": "./shared/assets/images/icon.png",
@@ -22,7 +22,7 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.defichain.app",
+      "bundleIdentifier": "com.safahicorp.app.colemain",
       "buildNumber": "0.0.0",
       "infoPlist": {
         "NSFaceIDUsageDescription": "This app uses FaceID to enable privacy lock on device."
