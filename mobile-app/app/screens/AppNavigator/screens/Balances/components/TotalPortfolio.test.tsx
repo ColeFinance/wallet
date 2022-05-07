@@ -11,21 +11,21 @@ import { loans } from '@store/loans'
 jest.mock('@shared-contexts/ThemeProvider')
 jest.mock('@contexts/DisplayBalancesContext')
 
-describe('DFI Total Portfolio Card', () => {
+describe('COLE Total Portfolio Card', () => {
   it('should match snapshot', async () => {
     const initialState: Partial<RootState> = {
       wallet: {
         utxoBalance: '77',
         tokens: [{
           id: '0',
-          symbol: 'DFI',
-          symbolKey: 'DFI',
-          displaySymbol: 'DFI',
+          symbol: 'COLE',
+          symbolKey: 'COLE',
+          displaySymbol: 'COLE',
           isDAT: true,
           isLPS: false,
           isLoanToken: false,
           amount: '23',
-          name: 'DeFiChain'
+          name: 'ColeChain'
         }].map(setTokenSymbol),
         allTokens: {},
         poolpairs: [],

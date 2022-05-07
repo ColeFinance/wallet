@@ -61,7 +61,7 @@ export function DFIBalanceCard ({ denominationCurrency }: DFIBalaceCardProps): J
           <View style={tailwind('flex-row m-4 mb-2 justify-between')}>
             <View style={tailwind('flex-row items-center')}>
               <DFIIcon width={32} height={32} />
-              <TokenNameText displaySymbol='DFI' name='DeFiChain' testID='total_dfi_label' />
+              <TokenNameText displaySymbol='COLE' name='ColeChain' testID='total_dfi_label' />
             </View>
 
             {
@@ -147,7 +147,7 @@ function DFIBreakdownAction ({ dfiUnified }: { dfiUnified: WalletToken }): JSX.E
     <View style={tailwind('flex-row mt-4')}>
       <InfoTextLink
         onPress={() => navigation.navigate('TokensVsUtxo')}
-        text='Learn more about DFI'
+        text='Learn more about COLE'
         containerStyle={tailwind('w-9/12')}
         testId='token_vs_utxo_info'
       />
